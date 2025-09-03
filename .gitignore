@@ -1,0 +1,16 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+bin/
+obj/
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# Otros archivos temporales
+*.DS_Store
