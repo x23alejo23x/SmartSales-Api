@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace SmartSales_Api.Models;
+namespace SmartSales_Api.Models.Dtos;
 
 public partial class Promocione
 {
