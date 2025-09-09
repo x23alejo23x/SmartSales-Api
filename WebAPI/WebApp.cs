@@ -1,18 +1,19 @@
-﻿namespace MiWebAPI.WebAPI;
-
-public static class WebApp
+﻿namespace SmartSales_Api.WebAPI
 {
-    public static WebApplication ConfigureApplication(this WebApplication app)
+    public static class WebApp
     {
-        if (app.Environment.IsDevelopment())
+        public static WebApplication ConfigureApplication(this WebApplication app)
         {
-            app.UseSwagger();
-            app.UseSwaggerUI();
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+                app.MapControllers();
+            }
+
+            app.MapGet("/", () => "Backend SmartSales Up! 🚀").WithTags("General");
+
+            return app;
         }
-
-        // Endpoint inicial
-        app.MapGet("/", () => "Backend SmartSales Up!").WithTags("General");
-
-        return app;
     }
 }

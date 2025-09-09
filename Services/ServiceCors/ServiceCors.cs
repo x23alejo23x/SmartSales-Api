@@ -1,4 +1,4 @@
-﻿namespace Iceberg_Dashboard_api.Services.ServiceCors
+﻿namespace SmartSales_Api.Services.ServiceCors
 {
     public static class ServiceCors
     {
@@ -6,7 +6,7 @@
         {
             /************ Configuración de CORS ************/
             var allowedOrigins = configuration.GetSection("AllowedOrigins").Get<string[]>();
-            services.AddCors(options =>
+            _ = services.AddCors(options =>
             {
                 options.AddPolicy("AllCors",
                     builder =>

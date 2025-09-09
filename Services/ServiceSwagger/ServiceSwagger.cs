@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace MiWebAPI.Services
+namespace SmartSales_Api.Services.ServiceSwagger
 {
     public static class ServiceSwagger
     {

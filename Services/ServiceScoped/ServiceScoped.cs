@@ -1,13 +1,12 @@
-﻿namespace TuProyecto.Services.ServiceScoped
+﻿using SmartSales_Api.Events;
+
+namespace SmartSales_Api.Services.ServiceScoped
 {
     public static class ServiceScoped
     {
         public static IServiceCollection AddScopedServices(this IServiceCollection services)
         {
-            // Aquí vas registrando tus interfaces e implementaciones
-            // Ejemplo:
-            // services.AddScoped<INombreServicio, NombreServicio>();
-
+            services.AddScoped<ICategoria, CategoriaMethod>();
             return services;
         }
     }

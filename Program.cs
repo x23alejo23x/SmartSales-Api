@@ -1,4 +1,4 @@
-﻿using MiWebAPI.WebAPI;
+﻿using SmartSales_Api.WebAPI;
 using SmartSales_Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
